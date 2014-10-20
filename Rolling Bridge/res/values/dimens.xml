@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Brick Left & Right Dimension -->
+    <dimen name="text_left_right_brick">20sp</dimen>
+    <dimen name="textButton_LeftRightBrick">14sp</dimen>
+    <dimen name="left_right_Brick_width">200dp</dimen>
+    <dimen name="left_right_Brick_marginRight">-200dp</dimen>
+    <dimen name="left_right_Brick_marginLeft">-200dp</dimen>
+    <dimen name="horizontalgradientLine_width">190dp</dimen>
+    <dimen name="horizontalgradientline_height">2dp</dimen>
+    <dimen name="horizontalgradientline_marginTop">35dp</dimen>
+    
+    <!--  Toast Dimension -->
+    <dimen name="Toast_width">400dp</dimen>
+    <dimen name="Toast_height">35dp</dimen>
+    <dimen name="ToastImage_width">30dp</dimen>
+    <dimen name="ToastImage_marginLeft">10dp</dimen>
+    <dimen name="ToastTextSize">16sp</dimen>
+    <dimen name="Toast_radius">8dp</dimen>
+    
+    <!-- Bluetooth Row Dimension -->
+    <dimen name="BtRowAddr">12sp</dimen>
+    <dimen name="BtRowName">14sp</dimen>
+    
+    <!--  Training Fragment -->
+    <dimen name="trainingFragmentH2">14sp</dimen>
+    
+    <!--  PhotoFragment -->
+    <dimen name="PhotoFragmentH2">16sp</dimen>
+    
+    <!-- Home Fragment Dimension -->
+    <dimen name="homeFragmentBTN">14sp</dimen>
+    <dimen name="homeFragmentBTNwidth">144dp</dimen>
+    <dimen name="homeFragmentBTNheight">50dp</dimen>
+    <dimen name="homeFragmentBTNmarginLeft">35dp</dimen>
+    <dimen name="homeFragmentH1Title">32sp</dimen>
+    <dimen name="homeFragmentH2Title">22sp</dimen>
+    
+    <!--  Dialog Dimension -->
+    <dimen name="dialogFragment_title">18sp</dimen>
+    <dimen name="dialogFragment_message">14sp</dimen>
+</resources>

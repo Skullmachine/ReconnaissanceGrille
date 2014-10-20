@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/CameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1" >
+        
+	    <SurfaceView
+	        android:id="@+id/surface_camera"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+		
+	    <Button
+	        android:id="@+id/capturePhoto"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:onClick="onClick"
+	        android:text="Make Photo" />
+	    
+	    <Button
+	        android:id="@+id/FakeButton1"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginTop="15dp"
+	        android:text="Fake Photo 1" />
+
+	    <Button
+	        android:id="@+id/FakeButton2"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/FakeButton1"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginTop="15dp"
+	        android:text="Fake Photo 2" />
+
+	    <Button
+	        android:id="@+id/FakeButton3"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/FakeButton2"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginTop="15dp"
+	        android:text="Fake Photo 3" />
+	    
+	   	<Button
+	   	    android:id="@+id/FakeRealButton1"
+	   	    style="?android:attr/buttonStyleSmall"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_alignParentRight="true"
+	   	    android:layout_below="@id/FakeButton3"
+	   	    android:layout_marginRight="15dp"
+	   	    android:layout_marginTop="15dp"
+	   	    android:text="Fake real Photo 1" />
+
+	    <Button
+	        android:id="@+id/FakeRealButton2"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/FakeRealButton1"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginTop="15dp"
+	        android:text="Fake Real Photo 2" />
+
+	    <Button
+	        android:id="@+id/FakeRealButton3"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/FakeRealButton2"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginTop="15dp"
+	        android:text="Fake Real Photo 3" />
+	    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/HoughDetection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@drawable/bandeau" >
+
+        <com.pfe.rollingbridge.views.HoughView
+            android:id="@+id/houghBitmap"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/houghBitmap"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:maxHeight="250dp"
+            android:maxWidth="350dp"
+            android:src="@drawable/imageloader" />
+
+        <LinearLayout
+            android:id="@+id/LinearValidTransforme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/houghBitmap"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/confirmHoughDetection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commencer le Jeu" />
+
+            <Button
+                android:id="@+id/resetDetection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Refaire la Photo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearWaitTransforme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/houghBitmap"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/textInfoPhotoFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Décodage de l&apos;Image"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/PhotoFragmentH2" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout> 

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.pfe.rollingbridge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bandeau"
+    android:orientation="horizontal" >
+
+	<RelativeLayout
+	    android:layout_width="550dp"
+	    android:layout_height="match_parent"
+	    android:clickable="false"
+	    android:longClickable="false"
+	    android:padding="20dp" >
+
+		<com.pfe.rollingbridge.views.GameBoard
+		    android:id="@+id/trainingGameBoard"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerInParent="true"
+		    android:layout_centerVertical="true"
+		    android:clickable="false"
+		    android:longClickable="false"
+		    android:padding="16dp"
+		    app:colsNumber="7"
+		    app:isTraining="true"
+		    app:linesNumber="8" />
+
+	</RelativeLayout>
+
+<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+
+		<TextView
+		    android:id="@+id/lol"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="55dp"
+		    android:text="Entraînement"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="@color/White"
+		    android:textColorHint="@color/White"
+		    android:textSize="@dimen/homeFragmentH1Title" />
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_below="@id/lol"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="250dp"
+		    android:orientation="vertical"
+		    android:paddingLeft="35dp" >
+
+			<TextView
+			    android:id="@+id/textView2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Etat de la Pince :"
+			    android:textAppearance="?android:attr/textAppearanceSmall"
+			    android:textColor="@color/LightGray"
+			    android:textColorHint="@color/LightGray"
+			    android:textSize="@dimen/trainingFragmentH2" />
+
+			<Switch
+			    android:id="@+id/pinceState"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:layout_marginTop="5dp"
+			    android:checked="false"
+			    android:textColor="@color/LightGray"
+			    android:textColorHint="@color/LightGray"
+			    android:textOff="Fermer"
+			    android:textOn="Ouvrir"
+			    android:textSize="@dimen/trainingFragmentH2"
+			    android:thumbTextPadding="25dp" />
+
+			<TextView
+			    android:id="@+id/textView3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="20dp"
+			    android:text="Position du Bras :"
+			    android:textAppearance="?android:attr/textAppearanceSmall"
+			    android:textColor="@color/LightGray"
+			    android:textColorHint="@color/LightGray"
+			    android:textSize="@dimen/trainingFragmentH2" />
+
+			<Switch
+			    android:id="@+id/armsState"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:layout_marginTop="5dp"
+			    android:checked="false"
+			    android:textColor="@color/LightGray"
+			    android:textColorHint="@color/LightGray"
+			    android:textOff="Haut"
+			    android:textOn="Bas"
+			    android:textStyle="bold"
+			    android:thumbTextPadding="32dp" />
+			
+						
+			<TextView
+			    android:id="@+id/textView4"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="20dp"
+			    android:text="Réinitialiser le Robot :"
+			    android:textAppearance="?android:attr/textAppearanceSmall"
+			    android:textColor="@color/LightGray"
+			    android:textColorHint="@color/LightGray"
+			    android:textSize="@dimen/trainingFragmentH2" />
+
+			<Button
+			    android:id="@+id/reset"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:layout_marginTop="5dp"
+			    android:textColor="@color/LightGray"
+			    android:textColorHint="@color/LightGray"
+				android:text="Réinitialiser la position"
+			    android:textStyle="bold"
+			    android:thumbTextPadding="32dp" />
+
+		</LinearLayout>
+
+	</RelativeLayout>
+	
+</LinearLayout>

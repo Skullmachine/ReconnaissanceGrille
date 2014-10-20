@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bandeau"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="right"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_weight="0.6"
+	    android:gravity="right"
+	    android:orientation="vertical" >
+
+		<TextView
+		    android:id="@+id/SchoolTitle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Polytech&apos; Tours"
+		    android:textAppearance="?android:attr/textAppearanceLarge"
+		    android:textColor="@color/White"
+		    android:textColorHint="@color/White"
+		    android:textSize="@dimen/homeFragmentH1Title" />
+
+		<TextView
+		    android:id="@+id/ProjectTitle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Pont Roulant"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:textColor="@color/White"
+		    android:textColorHint="@color/White"
+		    android:textSize="@dimen/homeFragmentH2Title" />
+	
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.4"
+	    android:gravity="center"
+	    android:orientation="horizontal" >
+	
+	    <Button
+	        android:id="@+id/playBTN"
+	        android:layout_width="@dimen/homeFragmentBTNwidth"
+	        android:layout_height="@dimen/homeFragmentBTNheight"
+	        android:background="@drawable/button"
+	        android:text="Jouer"
+	        android:textColor="@color/White"
+	        android:textSize="@dimen/homeFragmentBTN" />
+	
+	    <Button
+	        android:id="@+id/trainingBTN"
+	        android:layout_width="@dimen/homeFragmentBTNwidth"
+	        android:layout_height="@dimen/homeFragmentBTNheight"
+	        android:layout_marginLeft="@dimen/homeFragmentBTNmarginLeft"
+	        android:background="@drawable/button"
+	        android:text="Entrainement"
+	        android:textColor="@color/White"
+	        android:textSize="@dimen/homeFragmentBTN" />
+	
+	    <Button
+	        android:id="@+id/creditsBTN"
+	        android:layout_width="@dimen/homeFragmentBTNwidth"
+	        android:layout_height="@dimen/homeFragmentBTNheight"
+	        android:layout_marginLeft="@dimen/homeFragmentBTNmarginLeft"
+	        android:background="@drawable/button"
+	        android:text="Crédits"
+	        android:textColor="@color/White"
+	        android:textSize="@dimen/homeFragmentBTN" />
+	
+	</LinearLayout>
+	
+</LinearLayout>

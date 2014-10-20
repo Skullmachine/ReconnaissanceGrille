@@ -1,0 +1,18 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="LightGray">#002e3e</color>
+	<color name="Lightblue">#cedbde</color>
+	<color name="White">#ffff</color>
+	<color name="Black">#000000</color>
+	<color name="holo_orange_light">#ffffbb33</color>
+	
+	<color name="GameBoard_Background">#75A9CC</color>
+	<color name="GameBoard_case">#306CA3</color>
+	<color name="GameBoard_line">#000000</color>
+	<color name="GameBoard_arrow">#FFFFFF</color>
+	<color name="GameBoard_robot">#FFFF00</color>
+	
+	<color name="Dialog_background">#939393</color>
+	<color name="Dialog_border">#606e76</color>
+</resources>

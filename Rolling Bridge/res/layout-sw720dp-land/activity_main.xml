@@ -1,0 +1,424 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".HomeActivity"
+    android:tag="sw720dp"
+    android:id="@+id/home" >
+
+	<RelativeLayout
+	    android:id="@+id/fragmentContainer"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_toRightOf="@+id/leftBrick"
+	    android:background="@color/Lightblue"
+	    android:clickable="true" >
+
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/leftBrick"
+	    android:layout_width="@dimen/left_right_Brick_width"
+	    android:layout_height="370dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/brickdesignleft"
+	    android:clickable="true"
+	    android:focusable="true"
+	    android:orientation="horizontal" >
+	    
+	    <TextView
+	        android:id="@+id/BrickNameLeft"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="5dp"
+	        android:text="Left Brick"
+	        android:textColor="@color/White"
+	        android:textSize="@dimen/text_left_right_brick" />
+	    
+	   	<ImageView
+	   	    android:layout_width="@dimen/horizontalgradientLine_width"
+	   	    android:layout_height="@dimen/horizontalgradientline_height"
+	   	    android:layout_centerHorizontal="true"
+	   	    android:layout_marginTop="@dimen/horizontalgradientline_marginTop"
+	   	    android:src="@drawable/horizontalgradientline" />
+	   	
+	   	<RelativeLayout
+	   	    android:id="@+id/layoutBtDeviceLeft"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="fill_parent"
+	   	    android:layout_above="@+id/BTconnectLeft"
+	   	    android:layout_marginTop="40dp"
+	   	    android:visibility="visible" >
+	   	    
+	   	    <Button
+	   	        android:id="@+id/BtsearchLeft"
+	   	        android:layout_width="245dp"
+	   	        android:layout_height="50dp"
+	   	        android:layout_alignParentTop="true"
+	   	        android:layout_marginLeft="1dp"
+	   	        android:layout_marginRight="5dp"
+	   	        android:background="@drawable/buttonreverse"
+	   	        android:text="Lancer la Recherche"
+	   	        android:textColor="@color/White"
+	   	        android:textSize="@dimen/textButton_LeftRightBrick" />
+	   	    		   	
+		   	<ListView
+		   	    android:id="@+id/BTlistLeft"
+		   	    android:layout_width="180dp"
+		   	    android:layout_height="wrap_content"
+		   	    android:layout_alignLeft="@+id/BtsearchLeft"
+		   	    android:layout_alignRight="@+id/BtsearchLeft"
+		   	    android:layout_below="@+id/BtsearchLeft"
+		   	    android:layout_marginLeft="1dp"
+		   	    android:layout_marginRight="5dp"
+		   	    android:choiceMode="singleChoice" />
+		   	
+		</RelativeLayout>
+		
+	  <RelativeLayout
+	   	    android:id="@+id/layoutBtConnectionLeft"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="fill_parent"
+	   	    android:layout_above="@+id/BTconnectLeft"
+	   	    android:visibility="gone"
+	   	    android:layout_marginTop="40dp" >
+	   	    
+		   	<ProgressBar
+		   	    android:id="@+id/connectWaiterLeft"
+		   	    android:layout_width="wrap_content"
+		   	    android:layout_height="wrap_content"
+		   	    android:layout_marginLeft="20dp"
+		   	    android:layout_marginTop="90dp" />
+
+		   	<TextView
+		   	    android:layout_width="wrap_content"
+		   	    android:layout_height="wrap_content"
+		   	    android:layout_alignParentTop="true"
+		   	    android:layout_marginLeft="5dp"
+		   	    android:layout_marginTop="95dp"
+		   	    android:textSize="15sp"
+		   	    android:layout_toRightOf="@+id/connectWaiterLeft"
+		   	    android:text="Connexion en cours"
+		   	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		   	<TextView
+		   	    android:id="@+id/connectTextLeftAddr"
+		   	    android:layout_width="wrap_content"
+		   	    android:layout_height="wrap_content"
+		   	    android:layout_alignBottom="@+id/connectWaiterLeft"
+		   	    android:layout_toRightOf="@+id/connectWaiterLeft"
+		   	    android:layout_marginLeft="14dp"
+		   	    android:text="Small Text"
+		   	    android:textAppearance="?android:attr/textAppearanceSmall" />
+		   	
+		</RelativeLayout>
+		
+	   	<RelativeLayout
+	   	    android:id="@+id/layoutBtConnectedLeft"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="fill_parent"
+	   	    android:layout_above="@+id/BTconnectLeft"
+	   	    android:layout_marginTop="40dp"
+	   	    android:visibility="gone" >
+		   	
+	   	   
+	   	    <ImageView
+	   	        android:id="@+id/imageView1"
+	   	        android:layout_width="70dp"
+	   	        android:layout_height="80dp"
+	   	        android:layout_centerHorizontal="true"
+	   	        android:layout_alignLeft="@+id/connectedLeftName"
+	   	        android:layout_alignRight="@+id/connectedLeftName"
+	   	        android:layout_marginTop="50dp"
+	   	        android:src="@drawable/bluetooth" />
+
+	   		<TextView
+	   		    android:id="@+id/connectedLeftName"
+	   		    android:layout_width="wrap_content"
+	   		    android:layout_height="wrap_content"
+	   		    android:layout_above="@+id/connectedLeftAddr"
+	   		    android:ellipsize="marquee"
+		    	android:gravity="center"
+		    	android:focusable="true"
+		    	android:focusableInTouchMode="true"
+		    	android:marqueeRepeatLimit="marquee_forever"
+		    	android:scrollHorizontally="true"
+		    	android:singleLine="true"
+	   		    android:layout_centerHorizontal="true"
+	   		    android:text="Medium Text"
+	   		    android:textAppearance="?android:attr/textAppearanceSmall" />
+	   			
+	   		
+	   		<TextView
+	   		    android:id="@+id/connectedLeftAddr"
+	   		    android:layout_width="wrap_content"
+	   		    android:layout_height="wrap_content"
+	   		    android:layout_alignParentBottom="true"
+	   		    android:layout_centerHorizontal="true"
+	   		    android:layout_marginBottom="35dp"
+	   		    android:text="Small Text"
+	   		    android:textAppearance="?android:attr/textAppearanceSmall" />
+	   		
+	   		<ProgressBar
+	   		    android:id="@+id/leftBatteryLevel"
+	   		    style="@android:style/Widget.ProgressBar.Horizontal"
+	   		    android:layout_width="30dp"
+	   		    android:layout_height="10dp"
+	   		    android:layout_marginLeft="10dp"
+	   		    android:layout_marginTop="3dp"
+	   		    android:max="100" />
+
+	   		<TextView
+	   		    android:id="@+id/leftBatteryText"
+	   		    android:layout_width="wrap_content"
+	   		    android:layout_height="wrap_content"
+	   		    android:layout_marginLeft="4dp"
+	   		    android:layout_toRightOf="@id/leftBatteryLevel"
+	   		    android:text="5%"
+	   		    android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+		</RelativeLayout>
+	   	
+	   	<Button
+	   	    android:id="@+id/BTconnectLeft"
+	   	    android:layout_width="245dp"
+	   	    android:layout_height="50dp"
+	   	    android:layout_alignParentBottom="true"
+	   	    android:layout_marginBottom="5dp"
+	   	    android:layout_marginLeft="1dp"
+	   	    android:layout_marginRight="5dp"
+	   	    android:background="@drawable/button"
+	   	    android:text="Connexion"
+	   	    android:textColor="@color/White"
+	   	    android:textSize="@dimen/textButton_LeftRightBrick" />
+		
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/RightBrick"
+	    android:layout_width="@dimen/left_right_Brick_width"
+	    android:layout_height="370dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/leftBrick"
+	    android:background="@drawable/brickdesignright"
+	    android:focusable="true"
+	    android:orientation="horizontal" >
+	   	
+	   	<TextView
+	   	    android:id="@+id/BrickNameRight"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_centerHorizontal="true"
+	   	    android:layout_marginTop="5dp"
+	   	    android:clickable="true"
+	   	    android:text="Right Brick"
+	   	    android:textColor="@color/White"
+	   	    android:textSize="@dimen/text_left_right_brick" />
+	    
+	   	<ImageView
+	   	    android:layout_width="@dimen/horizontalgradientLine_width"
+	   	    android:layout_height="@dimen/horizontalgradientline_height"
+	   	    android:layout_centerHorizontal="true"
+	   	    android:layout_marginTop="@dimen/horizontalgradientline_marginTop"
+	   	    android:src="@drawable/horizontalgradientline" />
+	   	
+	   	<RelativeLayout
+	   	    android:id="@+id/layoutBtDeviceRight"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="fill_parent"
+	   	    android:layout_above="@+id/BTconnectRight"
+	   	    android:layout_marginTop="40dp"
+	   	    android:visibility="visible" >
+	   	    
+	   	    <Button
+	   	        android:id="@+id/BtsearchRight"
+	   	        android:layout_width="245dp"
+	   	        android:layout_height="50dp"
+	   	        android:layout_alignParentTop="true"
+	   	        android:layout_marginLeft="1dp"
+	   	        android:layout_marginRight="5dp"
+	   	        android:background="@drawable/buttonreverse"
+	   	        android:text="Lancer la Recherche"
+	   	        android:textColor="@color/White"
+	   	        android:textSize="@dimen/textButton_LeftRightBrick" />
+	   	    		   	
+		   	<ListView
+		   	    android:id="@+id/BTlistRight"
+		   	    android:layout_width="180dp"
+		   	    android:layout_height="wrap_content"
+		   	    android:layout_alignLeft="@+id/BtsearchRight"
+		   	    android:layout_alignRight="@+id/BtsearchRight"
+		   	    android:layout_below="@+id/BtsearchRight"
+		   	    android:layout_marginLeft="5dp"
+		   	    android:layout_marginRight="1dp"
+		   	    android:choiceMode="singleChoice" />
+		   	
+		</RelativeLayout>
+		
+	   <RelativeLayout
+	       android:id="@+id/layoutBtConnectionRight"
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent"
+	       android:layout_above="@+id/BTconnectRight"
+	       android:layout_centerHorizontal="true"
+	       android:layout_marginTop="40dp"
+	       android:visibility="gone" >
+	   	    
+		   	<ProgressBar
+		   	    android:id="@+id/connectWaiterRight"
+		   	    android:layout_width="wrap_content"
+		   	    android:layout_height="wrap_content"
+		   	    android:layout_marginLeft="20dp"
+		   	    android:layout_marginTop="90dp" />
+
+		   	<TextView
+		   	    android:layout_width="wrap_content"
+		   	    android:layout_height="wrap_content"
+		   	    android:layout_alignParentTop="true"
+		   	    android:layout_centerHorizontal="true"
+		   	    android:layout_marginLeft="5dp"
+		   	    android:layout_marginTop="95dp"
+		   	    android:layout_toRightOf="@+id/connectWaiterRight"
+		   	    android:text="Connexion en cours"
+		   	    android:textAppearance="?android:attr/textAppearanceMedium"
+		   	    android:textSize="15sp" />
+
+		   	<TextView
+		   	    android:id="@+id/connectTextRightAddr"
+		   	    android:layout_width="wrap_content"
+		   	    android:layout_height="wrap_content"
+		   	    android:layout_alignBottom="@+id/connectWaiterRight"
+		   	    android:layout_toRightOf="@+id/connectWaiterRight"
+		   	    android:layout_marginLeft="14dp"
+		   	    android:text="Small Text"
+		   	    android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+		</RelativeLayout>
+		
+	   	<RelativeLayout
+	   	    android:id="@+id/layoutBtConnectedRight"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="fill_parent"
+	   	    android:layout_above="@+id/BTconnectRight"
+	   	    android:layout_marginTop="40dp"
+	   	    android:visibility="gone" >
+	   	    
+	   	    <ImageView
+	   	        android:id="@+id/imageView2"
+	   	        android:layout_width="70dp"
+	   	        android:layout_height="80dp"
+	   	        android:layout_centerHorizontal="true"
+	   	        android:layout_alignLeft="@+id/connectedRightName"
+	   	        android:layout_alignRight="@+id/connectedRightName"
+	   	        android:layout_marginTop="50dp"
+	   	        android:src="@drawable/bluetooth" />
+	   	    
+	   	    <TextView
+	   		    android:id="@+id/connectedRightName"
+	   		    android:layout_width="wrap_content"
+	   		    android:layout_height="wrap_content"
+	   		    android:layout_above="@+id/connectedRightAddr"
+	   		    android:ellipsize="marquee"
+		    	android:gravity="center"
+		    	android:marqueeRepeatLimit="marquee_forever"
+		    	android:scrollHorizontally="true"
+		    	android:focusable="true"
+		    	android:focusableInTouchMode="true"
+		    	android:singleLine="true"
+	   		    android:layout_centerHorizontal="true"
+	   		    android:text="Medium Text"
+	   		    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+	   		<TextView
+	   		    android:id="@+id/connectedRightAddr"
+	   		    android:layout_width="wrap_content"
+	   		    android:layout_height="wrap_content"
+	   		    android:layout_alignParentBottom="true"
+	   		    android:layout_centerHorizontal="true"
+	   		    android:layout_marginBottom="35dp"
+	   		    android:text="Small Text"
+	   		    android:textAppearance="?android:attr/textAppearanceSmall" />
+	   		
+	   		<ProgressBar
+	   		    android:id="@+id/RightBatteryLevel"
+	   		    style="@android:style/Widget.ProgressBar.Horizontal"
+	   		    android:layout_width="30dp"
+	   		    android:layout_height="10dp"
+	   		    android:layout_marginLeft="10dp"
+	   		    android:layout_marginTop="3dp"
+	   		    android:max="100" />
+
+	   		<TextView
+	   		    android:id="@+id/RightBatteryText"
+	   		    android:layout_width="wrap_content"
+	   		    android:layout_height="wrap_content"
+	   		    android:layout_marginLeft="4dp"
+	   		    android:layout_toRightOf="@id/RightBatteryLevel"
+	   		    android:text="5%"
+	   		    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+		</RelativeLayout>
+	   	
+	   	<Button
+	   	    android:id="@+id/BTconnectRight"
+	   	    android:layout_width="245dp"
+	   	    android:layout_height="50dp"
+	   	    android:layout_alignParentBottom="true"
+	   	    android:layout_marginBottom="5dp"
+	   	    android:layout_marginLeft="1dp"
+	   	    android:layout_marginRight="5dp"
+	   	    android:background="@drawable/button"
+	   	    android:text="Connexion"
+	   	    android:textColor="@color/White"
+	   	    android:textSize="@dimen/textButton_LeftRightBrick" />
+		
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/ToastLayout"
+	    android:layout_width="450dp"
+	    android:layout_height="50dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="false"
+	    android:layout_marginLeft="300dp"
+	    android:layout_toRightOf="@id/leftBrick"
+	    android:background="@drawable/popup_footer_green"
+	    android:gravity="center|bottom"
+	    android:visibility="gone" >
+         
+        <ImageView
+            android:id="@+id/toastImage"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="1dp"
+            android:src="@drawable/green_tick" />
+                     
+        <TextView
+            android:id="@+id/toastMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/toastImage"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="3dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFF"
+            android:textSize="@dimen/ToastTextSize" />
+
+    </RelativeLayout>
+    
+</RelativeLayout>
