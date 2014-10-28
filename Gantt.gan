@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2014-09-29" view-index="0" gantt-divider-location="446" resource-divider-location="300" version="2.0" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2014-09-01" view-index="0" gantt-divider-location="302" resource-divider-location="300" version="2.0" locale="en_GB">
     <description/>
-    <view zooming-state="default:7" id="gantt-chart">
-        <field id="tpd3" name="Name" width="67" order="0"/>
-        <field id="tpd4" name="Begin date" width="16" order="1"/>
-        <field id="tpd5" name="End date" width="15" order="2"/>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpd3" name="Name" width="66" order="0"/>
+        <field id="tpd4" name="Begin date" width="17" order="1"/>
+        <field id="tpd5" name="End date" width="16" order="2"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="52" order="0"/>
-        <field id="1" name="Default role" width="47" order="1"/>
+        <field id="0" name="Name" width="50" order="0"/>
+        <field id="1" name="Default role" width="50" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -44,6 +44,10 @@
             <depend id="3" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="3" name="Rédaction sur ces techniques" color="#8cb6ce" meeting="false" start="2014-10-24" duration="2" complete="0" expand="true"/>
+        <task id="23" name="Prise en main du Java" color="#8cb6ce" meeting="false" start="2014-10-28" duration="21" complete="0" expand="true"/>
+        <task id="24" name="Choix d'une technique envisageable" color="#8cb6ce" meeting="false" start="2014-11-26" duration="14" complete="0" expand="true"/>
+        <task id="16" name="Débogage" color="#8cb6ce" meeting="false" start="2014-12-16" duration="21" complete="0" expand="true"/>
+        <task id="18" name="Livraison" color="#8cb6ce" meeting="false" start="2015-01-14" duration="7" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
@@ -58,9 +62,9 @@
         <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd1" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="300" visible="true"/>
-        <displaycolumn property-id="tpd4" order="1" width="75" visible="true"/>
-        <displaycolumn property-id="tpd5" order="2" width="67" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="197" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="53" visible="true"/>
+        <displaycolumn property-id="tpd5" order="2" width="48" visible="true"/>
     </taskdisplaycolumns>
     <previous/>
     <roles roleset-name="Default"/>
