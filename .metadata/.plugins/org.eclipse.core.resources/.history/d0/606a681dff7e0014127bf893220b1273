@@ -1,0 +1,80 @@
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+ 
+import javax.imageio.ImageIO;
+ 
+ 
+public class RGBToGrayScale {
+ 
+ 
+	public static void convertTograyscale(String filename){
+ 
+		BufferedImage img = null;
+ 
+		try {
+			img = ImageIO.read(new File(filename));
+		} catch (IOException e) {
+			System.out.println("Failed to read image!");
+		}
+ 
+ 
+		if(img == null){
+			System.out.println("Failed to decode image!");
+			System.exit(-1);
+		}
+ 
+		BufferedImage imgGray = new BufferedImage(img.getWidth(),img.getHeight(),BufferedImage.TYPE_3BYTE_BGR);
+ 
+		/*Iterating over every pixel of the color image */
+		int rgbVal;	
+		int r,g,b;	
+		int lum;
+		int grayVal;	
+		for(int i=0;i<img.getWidth();i++){
+			for(int j=0;j<img.getHeight();j++){
+ 
+				rgbVal = img.getRGB(i,j);
+ 
+				/* RGB --> 32 Bit Integer		
+				 * 1 Byte (alpha) | 1 Byte (red) | 1 Byte (green) | 1 Byte (blue) 
+				 */
+				r = (rgbVal>>16) & 0xff; //red
+				g = (rgbVal>>8) & 0xff; //green
+				b = rgbVal & 0xff; //blue
+ 
+				// Convert 
+				lum = (int) Math.round(0.2126*r + 0.7152*g + 0.0722*b);			
+				grayVal = (lum << 16) | (lum << 8) | lum;
+ 
+				imgGray.setRGB(i,j,grayVal);
+ 
+			}
+		}
+ 
+ 
+		try {
+			File f = new File("gray_Image.jpg");
+			ImageIO.write(imgGray, "jpeg", f);
+		} catch (IOException e) {
+			System.out.println("Failed to write gray image!");
+		}
+ 
+ 
+	}
+ 
+ 
+	public static void main(String[] args) {
+ 
+		String filename;	
+ 
+		try{
+			filename = args[0];		
+			convertTograyscale(filename);	
+ 
+		}catch(IndexOutOfBoundsException e){
+			System.out.println("You have to specifiy the filepath as a command line argument!");
+		}
+	}
+ 
+}

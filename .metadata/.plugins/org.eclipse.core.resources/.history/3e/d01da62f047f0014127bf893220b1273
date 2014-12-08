@@ -142,7 +142,7 @@ public class PictureHandler implements PictureCallback {
 			
 			int rgbVal;
 			int r,g,b;	
-			int conv;
+			int lum;
 			int grayVal;	
 			int[][] gray = new int[img0.getWidth()][img0.getHeight()];
 			
@@ -157,8 +157,8 @@ public class PictureHandler implements PictureCallback {
 					b = rgbVal & 0xff; //bleu
 	 
 					// Conversion
-					conv = (int) Math.round(0.2126*r + 0.7152*g + 0.0722*b);			
-					grayVal = (conv << 16) | (conv << 8) | conv;
+					lum = (int) Math.round(0.2126*r + 0.7152*g + 0.0722*b);			
+					grayVal = (lum << 16) | (lum << 8) | lum;
 	 
 					gray[i][j]=grayVal;
 
