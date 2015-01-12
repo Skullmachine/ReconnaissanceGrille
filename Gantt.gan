@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2014-09-01" view-index="0" gantt-divider-location="302" resource-divider-location="300" version="2.0" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2014-09-01" view-index="0" gantt-divider-location="481" resource-divider-location="300" version="2.0" locale="en_GB">
     <description/>
     <view zooming-state="default:8" id="gantt-chart">
-        <field id="tpd3" name="Name" width="66" order="0"/>
-        <field id="tpd4" name="Begin date" width="17" order="1"/>
-        <field id="tpd5" name="End date" width="16" order="2"/>
+        <field id="tpd3" name="Name" width="72" order="0"/>
+        <field id="tpd4" name="Begin date" width="14" order="1"/>
+        <field id="tpd5" name="End date" width="12" order="2"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="50" order="0"/>
@@ -36,18 +36,18 @@
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
         <task id="10" name="PROJET" color="#8cb6ce" meeting="false" start="2014-10-17" duration="76" complete="0" expand="true"/>
-        <task id="0" name="Décomposistions des fonctions du programme existant" color="#ff0000" meeting="false" start="2014-10-17" duration="5" complete="0" expand="true">
+        <task id="0" name="Décomposistions des fonctions du programme existant" color="#ff0033" meeting="false" start="2014-10-17" duration="5" complete="0" expand="true">
             <depend id="1" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="1" name="Définir les points d'entrée et de sortie" color="#ff3300" meeting="false" start="2014-10-24" duration="2" complete="0" expand="true"/>
-        <task id="2" name="Recherche sur les techniques de détections d'image et de contour" meeting="false" start="2014-10-17" duration="5" complete="0" expand="true">
+        <task id="1" name="Définir les points d'entrée et de sortie" color="#ff0033" meeting="false" start="2014-10-24" duration="2" complete="0" expand="true"/>
+        <task id="2" name="Recherche sur les techniques de détections d'image" color="#33cc00" meeting="false" start="2014-10-17" duration="5" complete="0" expand="true">
             <depend id="3" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="3" name="Rédaction sur ces techniques" color="#8cb6ce" meeting="false" start="2014-10-24" duration="2" complete="0" expand="true"/>
-        <task id="23" name="Prise en main du Java" color="#8cb6ce" meeting="false" start="2014-10-28" duration="21" complete="0" expand="true"/>
-        <task id="24" name="Choix d'une technique envisageable" color="#8cb6ce" meeting="false" start="2014-11-26" duration="14" complete="0" expand="true"/>
-        <task id="16" name="Débogage" color="#8cb6ce" meeting="false" start="2014-12-16" duration="21" complete="0" expand="true"/>
-        <task id="18" name="Livraison" color="#8cb6ce" meeting="false" start="2015-01-14" duration="7" complete="0" expand="true"/>
+        <task id="3" name="Rédaction sur ces techniques" color="#33cc00" meeting="false" start="2014-10-24" duration="2" complete="0" expand="true"/>
+        <task id="23" name="Prise en main du Java" color="#0000ff" meeting="false" start="2014-10-28" duration="21" complete="0" expand="true"/>
+        <task id="24" name="Choix d'une technique envisageable" color="#0000ff" meeting="false" start="2014-11-26" duration="14" complete="0" expand="true"/>
+        <task id="16" name="Débogage" color="#0000ff" meeting="false" start="2014-12-16" duration="21" complete="0" expand="true"/>
+        <task id="18" name="Livraison" color="#0000ff" meeting="false" start="2015-01-14" duration="7" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
@@ -62,9 +62,9 @@
         <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd1" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="197" visible="true"/>
-        <displaycolumn property-id="tpd4" order="1" width="53" visible="true"/>
-        <displaycolumn property-id="tpd5" order="2" width="48" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="348" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="68" visible="true"/>
+        <displaycolumn property-id="tpd5" order="2" width="61" visible="true"/>
     </taskdisplaycolumns>
     <previous/>
     <roles roleset-name="Default"/>

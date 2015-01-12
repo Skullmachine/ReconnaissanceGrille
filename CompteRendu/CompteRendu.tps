@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1195
-NormalPos.bottom=427
+NormalPos.right=1269
+NormalPos.bottom=559
 Class=LaTeXView
 Document=CompteRendu.tex
 
 [Frame0_View0,0]
-TopLine=27
-Cursor=806
+TopLine=63
+Cursor=2406
 
 [SessionInfo]
 FrameCount=1
