@@ -6,6 +6,8 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
@@ -49,19 +51,92 @@ L'objectif du projet est de concevoir un module de détection d'une grille et de 
 
 		\begin{figure}[h!]
 				\centering
-					\includegraphics[scale=0.5]{images/gantt.png}
+					\includegraphics[scale=0.4]{images/gantt.png}
 					\caption{Diagramme de Gantt}
 		\end{figure}
 
 \chapter{Recherches}
 
-	\section{Tranformée de Hough}
+	\section{Détection de formes}
+
+		\subsection{Tranformée de Hough}
+
+		Le principe qui sous-tend la transformée de Hough est qu'il existe un nombre infini de lignes qui passent par un point, dont la seule différence est l'orientation (l'angle). Le but de la transformée est de déterminer lesquelles de ces lignes passent au plus près du schéma attendu.
+		\vspace{0.2cm}
+		
+Dans la transformée de Hough, dite aussi transformée standard de Hough ou SHT, chaque ligne est un vecteur de coordonnées paramétriques :
+\vspace{0.2cm}
+
+\begin{itemize}
+	\item $\theta$ : l'angle
+	\item $\rho$ : la norme du vecteur (la longueur du segment perpendiculaire à la droite d'angle $\theta$ et passant par l'origine)
+\end{itemize}
+\vspace{0.2cm}
+
+En transformant toutes les lignes possibles qui passent par un point, c'est-à-dire en calculant la valeur de $\rho$ pour chaque $\theta$, on obtient une sinusoïde unique appelée espace de Hough. Si les courbes associées à deux points se coupent, l'endroit où elles se coupent dans l'espace de Hough correspond aux paramètres d'une droite qui relie ces deux points.
+\vspace{4cm}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.55]{images/hough.png}
+	\caption{Transformée de Hough}
+\end{figure}
+
+\newpage
+
+		\subsection{Codage de Freeman absolu}
+
+Codage avec un nombre limité de bits de la direction locale d'un élément de contour défini dans une image discrète, puis constitution d'une chaine de codes à partir d'un pixel initial, considérant qu'un élément de contour relie 2 pixels connexes.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=1]{images/freeman_absolu.png}
+	\caption{Constitution d'une chaîne de codes}
+\end{figure}
+
+		\subsection{Codage de Freeman relatif}
+
+Dans cette variante on code le changement de direction plutôt que de la direction.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=1]{images/freeman_relatif1.png}
+		\caption{Codage du changement de direction}
+\end{figure}
+
+Le code de Freeman standard est invariant en translation uniquement. Le code Freeman relatif est invariant en translation et aux rotations de 45°.
+\vspace{0.2cm}
+
+Codage sur 2 bits pour connexité 4. Codage sur 3 bits pour connexité 8. Codage sur 4 bits pour connexité 8 + longueur 2. Etc...
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.4]{images/freeman_relatif2.png}
+		\caption{Nombre de directions}
+\end{figure}
+
+\newpage
+
+\subsection{Régression linéaire}
+
+On approche un ensemble de points par un segment de droite. Pour cela on minimise un résidu entre le modèle (la droite) et les données (points repérés par leurs coordonnées).
+\vspace{0.2cm}
+
+\begin{itemize}
+	\item Résidu: 
+	\vspace{0.2cm}
+	
+	\begin{center}
+	$d^{2}(a,b) = $
+	\end{center}
+\end{itemize}
+
 
 	\section{Détection de couleur}
 
 \chapter{Analyse des classes}
 
-Dans ce chapitre, nous présentons les classes Hough.java, PictureHandler.java et HoughView du programme sur lesquelles nous avons dû travailler.
+Dans ce chapitre, nous présentons les classes Hough.java, PictureHandler.java et HoughView sur lesquelles nous avons dû travailler.
 
 	\section{Hough.java}
 
@@ -70,28 +145,288 @@ Dans ce chapitre, nous présentons les classes Hough.java, PictureHandler.java et
 			\textbf{public Hough(int width, int height)}
 			\vspace{0.2cm}
 			
-			Points d’entrée : 
+			\textbf{Points d'entrée :} 
 			\vspace{0.2cm}
 			
 			\begin{itemize}
-				\item width: largeur de l’image; entier
-				\item height: hauteur de l’image; entier
+				\item width: largeur de l'image; entier
+				\item height: hauteur de l'image; entier
 			\end{itemize}
-
 
 		\subsection{Méthodes (Transformée de Hough)}
 
+			\textbf{public void vote(int x, int y) }
+			\vspace{0.2cm}
+			
+			\textbf{Points d'entrée :} 
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item x: largeur de l'image/2; entier
+				\item y: hauteur de l'image/2; entier
+			\end{itemize}
+			\vspace{1cm}
+			
+			
+			\textbf{public List<double[]> getWinners(int threshold, int radius)}; on récupère la valeur extreme de la transformée de Hough
+			\vspace{0.2cm}
+			
+			\textbf{Points d'entrée:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item threshold : seuil de l'image
+				\item radius : rayon
+			\end{itemize}
+			\vspace{0.2cm}
+
+			\textbf{Point de sortie:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item winners: tableau contenant les valeurs extremes de Rho et Théta; tableau de réels
+			\end{itemize}
+			\vspace{1cm}
+
+			\textbf{private int distance(int r0, int t0, int r1, int t1)}
+			\vspace{0.2cm}
+			
+			\textbf{Points d'entrée:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item r0: point 0 de Rho; entier
+				\item t0: point 0 de Théta; entier
+				\item r1: point 1 de Rho; entier
+				\item t1: point 1 de Théta; entier
+			\end{itemize}
+			\vspace{0.2cm}
+			
+			\textbf{Point de sortie:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item dist: Retourne la valeur minimale entre dist et le maximum de la valeur absolue entre  (r0-r1) et (t0-t1); entier
+			\end{itemize}
+			
 		\subsection{Méthodes (Conversions)}
 
+			\textbf{public int RhoToIndex(double rho)}
+			\vspace{0.2cm}
+			
+			\textbf{Points d'entrée:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item rho: réel
+			\end{itemize}
+
+			\textbf{Point de sortie:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item On retourne un entier qui est spécialement converti pour rentrer dans notre index (matrice de valeur de Rho)
+			\end{itemize}
+			\vspace{1cm}
+			
+			\textbf{public double IndexToRho(int index)}
+			\vspace{0.2cm}
+			
+			\textbf{Points d'entrée:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item index: entier
+			\end{itemize}
+			\vspace{0.2cm}
+			
+			\textbf{Point de sortie:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item On retourne un reel qui vient de la conversion d'un entier (Rho) de la matrice d'index.
+			\end{itemize}
+			\vspace{1cm}
+			
+			\textbf{public int ThetaToIndex(double theta)}
+			\vspace{0.2cm}
+			
+			\textbf{Point d'entrée:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item theta: réel
+			\end{itemize}
+			\vspace{0.2cm}
+			
+			\textbf{Point de sortie :}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item On retourne un entier qui est spécialement converti pour rentrer dans notre index (matrice de valeur de Theta)
+			\end{itemize}
+			\vspace{1cm}
+			
+			\textbf{public double IndexToTheta(int index)}
+			\vspace{0.2cm}
+			
+			\textbf{Point d'entrée:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item index: entier
+				\vspace{0.2cm}
+			\end{itemize}
+
+			\textbf{Point de sortie:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item On retourne un réel qui vient de la conversion d'un entier (Theta) de la matrice d'index.
+			\end{itemize}
+			\vspace{1cm}
+			
+			\textbf{public double[] rhotheta\_to\_ab(double rho,double theta)} : conversion de rho et theta pour permettre son utilisation dans une équation de droite Y=a*X+b
+			\vspace{0.2cm}
+			
+			\textbf{Point d'entrée:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item rho: reel 
+				\item theta: reel
+			\end{itemize}
+			\vspace{0.2cm}
+			
+			\textbf{Point de sortie:}
+			\vspace{0.2cm}
+			
+			\begin{itemize}
+				\item a, b: reel
+			\end{itemize}
+			\vspace{1cm}
+			
 		\subsection{Accesseurs}
+
+			\textbf{public int getMaxIndexTheta()}
+			\vspace{0.2cm}
+			
+			\textbf{Point de sortie : }
+			\vspace{0.2cm}
+
+			\begin{itemize}
+				\item maxIndexTheta: entier; on récupère la valeur maximale de theta dans l'index
+				\vspace{1cm}
+			\end{itemize}
+
+			\textbf{public int getMaxIndexRho()}
+			\vspace{0.2cm}
+
+			\textbf{Point de sortie:}
+			\vspace{0.2cm}
+
+			\begin{itemize}
+				\item maxIndexRho: entier; on récupère la valeur maximale de rho dans l'index
+				\vspace{1cm}
+			\end{itemize}
+
+
+			\textbf{public int[][] getAccumulator()}
+			\vspace{0.2cm}
+
+			\textbf{Point de sortie:}
+			\vspace{0.2cm}
+
+			\begin{itemize}
+				\item acc: tableau 2 dimensions d'entier; on récupère ???
+				\vspace{1cm}
+			\end{itemize}
+
 
 	\section{PictureHandler.java}
 
 		\subsection{Constructeur}
 		
+		\textbf{public PictureHandler(PhotoFragment cxt, int callerId)}
+		\vspace{0.2cm}
+		
+		\textbf{Points d'entrée:}
+		\vspace{0.2cm}
+		
+		\begin{itemize}
+			\item cxt: photo du parent; PhotoFragment
+			\item callerId: entier
+		\end{itemize}
+	
+		
 		\subsection{Méthodes}
 
+		\textbf{public void onPictureTaken(byte[] data, Camera camera)}; decode de l'image Bitmap
+		\vspace{0.2cm}
+
+		\textbf{Points d'entrée:}
+		\vspace{0.2cm}
+
+		\begin{itemize}
+			\item data: tableau d'octets
+			\item camera: Camera
+		\end{itemize}
+		\vspace{1cm}
+
+		\textbf{protected void onPreExecute()}: pour chaque nouvelle ligne, on créé un nouvel HashMap les contenant
+		\vspace{1cm}
+
+		\textbf{protected Void doInBackground(Bitmap... pictureFile)}: dans cette méthode, on charge l'image enregistré puis on éxécute la transformée de Hough puis l'extraction des lignes de l'image.
+		\vspace{0.2cm}
+
+		\textbf{Points d'entrée:}
+		\vspace{0.2cm}
+
+		\begin{itemize}
+			\item pictureFile: type Bitmap
+		\end{itemize}
+		\vspace{1cm}
+
+		\textbf{protected void onPostExecute(Void result)}
+		\vspace{1cm}
+
+		\textbf{private void doTH(Bitmap img0)}: application de l'algorithme de Hough sur l'image
+		\vspace{0.2cm}
+
+		\textbf{Points d'entrée:}
+		\vspace{0.2cm}
+
+		\begin{itemize}
+			\item img0: type Bitmap
+		\end{itemize}
+		\vspace{1cm}
+
+		\textbf{private void doLinesExtraction(Bitmap img0)}: permet de faire l'extraction des lignes suite à la transformée de Hough
+		\vspace{0.2cm}
+
+		\textbf{Points d'entrée:}
+		\vspace{0.2cm}
+
+		\begin{itemize}
+			\item img0: type Bitmap
+		\end{itemize}
+		\vspace{1cm}
+
+		\textbf{private void sendLinesToDrawToUiThread(HashMap<Integer, ArrayList<Point>> lines)}: Permet de dessiner les lignes stockées dans le Hashmap.
+		\vspace{0.2cm}
+
+		\textbf{Points d'entrée:} 
+		\vspace{0.2cm}
+
+		\begin{itemize}
+			\item lines: type HashMap<Integer, ArrayList<Point>>; Un tableau qui a comme clef des entiers permettant de retrouver plus facilement les listes de points de chaque ligne précédement stockée. 
+		\end{itemize}
+		
+
+
 	\section{HoughView.java}
+
+
 
 \chapter{Tests effectués}
 

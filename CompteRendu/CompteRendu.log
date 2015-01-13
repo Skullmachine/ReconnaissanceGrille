@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.20)  12 JAN 2015 22:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.20)  13 JAN 2015 15:19
 entering extended mode
 **CompteRendu.tex
 (C:\Users\tiger\Documents\GitHub\ReconnaissanceGrille\CompteRendu\CompteRendu.tex
@@ -377,38 +377,104 @@ File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
 Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip57
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks19
+\ex@=\dimen118
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen119
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count144
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count145
+\leftroot@=\count146
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count147
+\DOTSCASE@=\count148
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count149
+\c@MaxMatrixCols=\count150
+\dotsspace@=\muskip11
+\c@parentequation=\count151
+\dspbrk@lvl=\count152
+\tag@help=\toks20
+\row@=\count153
+\column@=\count154
+\maxfields@=\count155
+\andhelp@=\toks21
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
+\@envbody=\toks22
+\multlinegap=\skip58
+\multlinetaggap=\skip59
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (C:\Users\tiger\Documents\GitHub\ReconnaissanceGrille\CompteRendu\CompteRendu.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Info: Redefining \degres on input line 35.
-LaTeX Info: Redefining \dots on input line 35.
-LaTeX Info: Redefining \up on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Info: Redefining \degres on input line 37.
+LaTeX Info: Redefining \dots on input line 37.
+LaTeX Info: Redefining \up on input line 37.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count144
-\scratchdimen=\dimen118
-\scratchbox=\box31
-\nofMPsegments=\count145
-\nofMParguments=\count146
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count147
-\MPscratchDim=\dimen119
-\MPnumerator=\count148
-\makeMPintoPDFobject=\count149
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count156
+\scratchdimen=\dimen127
+\scratchbox=\box33
+\nofMPsegments=\count157
+\nofMParguments=\count158
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count159
+\MPscratchDim=\dimen128
+\MPnumerator=\count160
+\makeMPintoPDFobject=\count161
+\everyMPtoPDFconversion=\toks25
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
@@ -416,46 +482,48 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 35.
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 35.
+(lastpage)             ! on input line 37.
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring ON on input line 37.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count150
+\c@section@level=\count162
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
 (C:\Users\tiger\Documents\GitHub\ReconnaissanceGrille\CompteRendu\CompteRendu.out)
 (C:\Users\tiger\Documents\GitHub\ReconnaissanceGrille\CompteRendu\CompteRendu.out)
 \@outlinefile=\write4
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 35.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 37.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 File: Logo_Polytech_Tours_et_DI_et_UFR_2.pdf Graphic file (type pdf)
  <use Logo_Polytech_Tours_et_DI_et_UFR_2.pdf>
-Package pdftex.def Info: Logo_Polytech_Tours_et_DI_et_UFR_2.pdf used on input line 35.
+Package pdftex.def Info: Logo_Polytech_Tours_et_DI_et_UFR_2.pdf used on input line 37.
 (pdftex.def)             Requested size: 209.79686pt x 113.81102pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 35.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 37.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 35.
+LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 37.
 
-Underfull \hbox (badness 3128) in paragraph at lines 35--35
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 3118) in paragraph at lines 37--37
 [][]\T1/cmss/m/n/10.95 alexandre.billay@etu.univ-tours.fr, thes-kull-
  []
 
@@ -476,7 +544,7 @@ Underfull \hbox (badness 3128) in paragraph at lines 35--35
 \@indexfile=\write7
 
 Writing index file CompteRendu.idx
-\c@lstlisting=\count151
+\c@lstlisting=\count163
 [5
 
 ]
@@ -485,144 +553,135 @@ Chapitre 1.
 
 ]
 Chapitre 2.
-<images/gantt.png, id=126, 1096.095pt x 277.035pt>
+<images/gantt.png, id=184, 1096.095pt x 277.035pt>
 File: images/gantt.png Graphic file (type png)
  <use images/gantt.png>
-Package pdftex.def Info: images/gantt.png used on input line 52.
-(pdftex.def)             Requested size: 548.04616pt x 138.51715pt.
-
-Overfull \hbox (64.3493pt too wide) in paragraph at lines 52--53
- [][] 
- []
-
-[7
+Package pdftex.def Info: images/gantt.png used on input line 54.
+(pdftex.def)             Requested size: 438.43024pt x 110.81203pt.
+ [7
 
  <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/images/gantt.png (PNG copy)>]
 Chapitre 3.
-[8
+<images/hough.png, id=192, 428.35031pt x 269.50688pt>
+File: images/hough.png Graphic file (type png)
+ <use images/hough.png>
+Package pdftex.def Info: images/hough.png used on input line 81.
+(pdftex.def)             Requested size: 235.5934pt x 148.22923pt.
+ [8
 
-]
+ <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/images/hough.png>] <images/freeman_absolu.png, id=199
+, 140.77594pt x 140.02313pt>
+File: images/freeman_absolu.png Graphic file (type png)
+
+<use images/freeman_absolu.png>
+Package pdftex.def Info: images/freeman_absolu.png used on input line 93.
+(pdftex.def)             Requested size: 140.77557pt x 140.02278pt.
+ <images/freeman_relatif1.png, id=200, 505.13719pt x 63.23625pt>
+File: images/freeman_relatif1.png Graphic file (type png)
+
+<use images/freeman_relatif1.png>
+Package pdftex.def Info: images/freeman_relatif1.png used on input line 103.
+(pdftex.def)             Requested size: 505.13596pt x 63.23608pt.
+
+Overfull \hbox (21.4391pt too wide) in paragraph at lines 103--104
+ [][] 
+ []
+
+
+Package frenchb.ldf Warning: Degrees would look better in TS1-encoding: 
+(frenchb.ldf)                add \usepackage{textcomp} to the preamble. 
+(frenchb.ldf)                Degrees used on input line 107.
+
+<images/freeman_relatif2.png, id=201, 465.23813pt x 390.70969pt>
+File: images/freeman_relatif2.png Graphic file (type png)
+ <use images/freeman_relatif2.png>
+Package pdftex.def Info: images/freeman_relatif2.png used on input line 114.
+(pdftex.def)             Requested size: 186.09195pt x 156.2811pt.
+
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+ []$[]$$[]$|
+ []
+
+[9 <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/images/freeman_absolu.png> <C:/Users/tiger/Document
+s/GitHub/ReconnaissanceGrille/CompteRendu/images/freeman_relatif1.png> <C:/Users/tiger/Documents/GitHub/ReconnaissanceGr
+ille/CompteRendu/images/freeman_relatif2.png>] [10]
 Chapitre 4.
+[11
 
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
+] [12]
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+ []$[]$$[]$|
+ []
 
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 			Points d’
-                 entrée :
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.77 				\item width: largeur de l’
-                                   image; entier
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.78 				\item height: hauteur de l’
-                                    image; entier
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-[9
-
-]
+[13] [14]
 Chapitre 5.
-[10
+[15
 
 ]
 Chapitre 6.
-[11
+[16
 
 ] 
 AED: lastpage setting LastPage
-[12
+[17
 
 ]
 No file CompteRendu.ind.
-runsystem(printf "Nombre de pages : 13")...disabled (restricted).
+runsystem(printf "Nombre de pages : 18")...disabled (restricted).
 
 ( FP-DIV )
-runsystem(printf "Division : 3.250000000000000000")...disabled (restricted).
+runsystem(printf "Division : 4.500000000000000000")...disabled (restricted).
 
  ( FP-TRUNC )
-runsystem(printf "Nombre de paquets de 4 pages : 3")...disabled (restricted).
+runsystem(printf "Nombre de paquets de 4 pages : 4")...disabled (restricted).
 
  ( FP-MUL )
-runsystem(printf "Nombre de pages en paquet : 12.000000000000000000")...disabled (restricted).
+runsystem(printf "Nombre de pages en paquet : 16.000000000000000000")...disabled (restricted).
 
  ( FP-SUB ) ( FP-TRUNC )
-runsystem(printf "Nombre de pages hors paquet : 1")...disabled (restricted).
+runsystem(printf "Nombre de pages hors paquet : 2")...disabled (restricted).
 
  ( FP-ZERO? )
 runsystem(printf "On rajoutera des pages")...disabled (restricted).
 
  ( FP-SUB ) ( FP-TRUNC )
-runsystem(printf "Nombre de pages a ajouter : 3")...disabled (restricted).
+runsystem(printf "Nombre de pages a ajouter : 2")...disabled (restricted).
 
  ( FP-SUB ) ( FP-POS? )
-runsystem(printf "Ajout d'une page 2.000000000000000000")...disabled (restricted).
+runsystem(printf "Ajout d'une page 1.000000000000000000")...disabled (restricted).
 
 
 ( FP-SUB ) ( FP-POS? )
-runsystem(printf "Ajout d'une page 1.000000000000000000")...disabled (restricted).
-
- [13
-
-] ( FP-SUB ) ( FP-POS? )
 runsystem(printf "Ajout d'une page 0.000000000000000000")...disabled (restricted).
 
- [14] ( FP-SUB ) ( FP-POS? ) [15]
-Underfull \hbox (badness 3128) in paragraph at lines 113--113
+ [18
+
+] ( FP-SUB ) ( FP-POS? ) [19]
+Underfull \hbox (badness 3118) in paragraph at lines 448--448
 [][]\T1/cmss/m/n/10.95 alexandre.billay@etu.univ-tours.fr, thes-kull-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
-[16
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
+[20
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
  (C:\Users\tiger\Documents\GitHub\ReconnaissanceGrille\CompteRendu\CompteRendu.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
-
-
-Package rerunfilecheck Warning: File `CompteRendu.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `CompteRendu.out':
-(rerunfilecheck)             Before: 88ACF0D9058347FFDC8A49E6720F2F3B;840
-(rerunfilecheck)             After:  FA6D55DB7802E2A71B558D4CC1C0C89F;1311.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 448.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 448.
+Package rerunfilecheck Info: File `CompteRendu.out' has not changed.
+(rerunfilecheck)             Checksum: 7447AF361FFCC9A922B6080B644E1799;1647.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 448.
  )
-(\end occurred when \iffalse on line 113 was incomplete) 
+(\end occurred when \iffalse on line 448 was incomplete) 
 Here is how much of TeX's memory you used:
- 9700 strings out of 493921
- 138215 string characters out of 3147282
- 347283 words of memory out of 3000000
- 12779 multiletter control sequences out of 15000+200000
- 19688 words of font info for 41 fonts, out of 3000000 for 9000
+ 10606 strings out of 493921
+ 148722 string characters out of 3147282
+ 360109 words of memory out of 3000000
+ 13634 multiletter control sequences out of 15000+200000
+ 21597 words of font info for 50 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,11n,45p,685b,373s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,45p,685b,413s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
 en\ec\dpi600\ecss0800.pk> <C:\Users\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1200.pk> <C:\U
 sers\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\tiger\AppData\Local\MiKTeX
@@ -633,10 +692,12 @@ c\dpi600\ecbx1440.pk> <C:\Users\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
 i600\ecss1000.pk> <C:\Users\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx2488.pk> <C:\Users\tig
 er\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk> <C:\Users\tiger\AppData\Local\MiKTeX\2.9\fon
 ts\pk\ljfour\jknappen\ec\dpi600\ecsx1728.pk> <C:\Users\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ectt1095.pk> <C:\Users\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1095.pk>
-Output written on CompteRendu.pdf (16 pages, 210006 bytes).
+\ectt1095.pk> <C:\Users\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1095.pk><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on CompteRendu.pdf (20 pages, 412919 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 772 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
 

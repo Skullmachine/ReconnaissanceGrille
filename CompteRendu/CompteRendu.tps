@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=CompteRendu.tex
 
 [Frame0_View0,0]
-TopLine=63
-Cursor=2406
+TopLine=124
+Cursor=4822
 
 [SessionInfo]
 FrameCount=1
