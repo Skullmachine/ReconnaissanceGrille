@@ -41,11 +41,15 @@
 Dans le cadre de notre quatrième année au sein de Polytech'Tours, nous avons dû réaliser un projet de développement embarqué sur une durée égale à 4 mois. Après 2 heures de présentation des sujets, nous avons choisi le développement et intégration d'un système de reconnaissance de grille sur tablette Androïd. Ce projet découle d'un PFE (Projet de Fin d'\'Etude), le Stacker Crane Probleme interprété par un pont roulant, réalisé lors l'année précédente par Thibault Morelle. Quant à notre projet, il fut décidé de reprendre la partie du PFE sur la reconnaisance automatique des objets à déplacer par simple prise de photo. Cette partie ne fonctionnait pas. 
 Notre projet a dû être fait en collaboration avec Clément Laloubeyre, un élève en cinquième année qui a pris la suite du PFE de Thibault Morelle.
 
-\chapter{Cahier des charges}
+\chapter{Conduite du projet}
+
+	\section{Cahier des charges}
 
 L'objectif du projet est de concevoir un module de détection d'une grille et de localisation de deux types de pièces de couleurs dans cette grille à l'aide de la caméra d'une tablette Android. Ce module sera à intégrer dans une application mobile permettant de contrôler un pont roulant ayant pour but de déplacer les objets détectés dans cette grille.
 
-\chapter{Conduite du projet}
+\section{\'Etat des lieux}
+
+Lors de notre reprise du projet, l'application permettait la détection des formes et des couleurs d'une image créée sous \textit{Paint} alors qu'une image prise à l'aide de la caméra de la tablette ne permettait pas ce fonctionnement. 
 
 	\section{Chronogramme réel du projet}
 
@@ -55,84 +59,46 @@ L'objectif du projet est de concevoir un module de détection d'une grille et de 
 					\caption{Diagramme de Gantt}
 		\end{figure}
 
-\chapter{Recherches}
+Après notre premier entretien avec Clément, nous avons réalisé tout au long du projet le diagramme de Gantt réel.
 
-	\section{Détection de formes}
-
-		\subsection{Tranformée de Hough}
-
-		Le principe qui sous-tend la transformée de Hough est qu'il existe un nombre infini de lignes qui passent par un point, dont la seule différence est l'orientation (l'angle). Le but de la transformée est de déterminer lesquelles de ces lignes passent au plus près du schéma attendu.
-		\vspace{0.2cm}
-		
-Dans la transformée de Hough, dite aussi transformée standard de Hough ou SHT, chaque ligne est un vecteur de coordonnées paramétriques :
-\vspace{0.2cm}
-
-\begin{itemize}
-	\item $\theta$ : l'angle
-	\item $\rho$ : la norme du vecteur (la longueur du segment perpendiculaire à la droite d'angle $\theta$ et passant par l'origine)
-\end{itemize}
-\vspace{0.2cm}
-
-En transformant toutes les lignes possibles qui passent par un point, c'est-à-dire en calculant la valeur de $\rho$ pour chaque $\theta$, on obtient une sinusoïde unique appelée espace de Hough. Si les courbes associées à deux points se coupent, l'endroit où elles se coupent dans l'espace de Hough correspond aux paramètres d'une droite qui relie ces deux points.
-\vspace{4cm}
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.55]{images/hough.png}
-	\caption{Transformée de Hough}
-\end{figure}
+Au début du projet, nous avons fait nos tâches en parallèle. 
+La décomposition des fonctions du programme existant a été réalisé par Thibault ainsi que leurs définition des points d'entrée et sortie (en rouge).
+La recherche sur les techniques de détections d'image et la rédaction de synthèse sur ces techniques a été produite par Alexandre (en vert).
+Le reste du projet, a été fait ensemble, c'est à dire la prise en main du Java ainsi que les logiciels attachés, l'analyse d'une technique implémentable envisageable, le débogage et la livraison de l'application.
 
 \newpage
 
-		\subsection{Codage de Freeman absolu}
+	\section{Software utilisés}
 
-Codage avec un nombre limité de bits de la direction locale d'un élément de contour défini dans une image discrète, puis constitution d'une chaine de codes à partir d'un pixel initial, considérant qu'un élément de contour relie 2 pixels connexes.
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=1]{images/freeman_absolu.png}
-	\caption{Constitution d'une chaîne de codes}
-\end{figure}
-
-		\subsection{Codage de Freeman relatif}
-
-Dans cette variante on code le changement de direction plutôt que de la direction.
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=1]{images/freeman_relatif1.png}
-		\caption{Codage du changement de direction}
-\end{figure}
-
-Le code de Freeman standard est invariant en translation uniquement. Le code Freeman relatif est invariant en translation et aux rotations de 45°.
-\vspace{0.2cm}
-
-Codage sur 2 bits pour connexité 4. Codage sur 3 bits pour connexité 8. Codage sur 4 bits pour connexité 8 + longueur 2. Etc...
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.4]{images/freeman_relatif2.png}
-		\caption{Nombre de directions}
-\end{figure}
-
-\newpage
-
-\subsection{Régression linéaire}
-
-On approche un ensemble de points par un segment de droite. Pour cela on minimise un résidu entre le modèle (la droite) et les données (points repérés par leurs coordonnées).
+Lors de ce projet nous avons pu mettre en pratique différents software:
 \vspace{0.2cm}
 
 \begin{itemize}
-	\item Résidu: 
-	\vspace{0.2cm}
+	\item \textbf{ADT Bundle }(IDE Eclipse 4.2 + SDK Manager): compatible Java 7. La version de l'application Androïd est la 4.3.
 	
-	\begin{center}
-	$d^{2}(a,b) = $
-	\end{center}
-\end{itemize}
-
-
-	\section{Détection de couleur}
+	\begin{figure}[h!]
+				\centering
+					\includegraphics[scale=0.4]{images/adt.png}
+					\caption{Android Developer Tools}
+		\end{figure}
+	
+	\item \textbf{Plugin Lejos} pour Eclipse: nécessitant l'installation de drivers pour les briques NXT.
+	
+	\begin{figure}[h!]
+				\centering
+					\includegraphics[scale=0.4]{images/lejos.jpg}
+					\caption{Plugin Lejos pour Eclipse}
+		\end{figure}
+	
+	\item \textbf{Genymotion:} émulateur plus performant que celui inclus à l'ADT. Nous avons pu simuler la quasi totalité de nos actions sur une Galaxy Tab 3 émulée.
+	
+	\begin{figure}[h!]
+				\centering
+					\includegraphics[scale=0.2]{images/genymotion.jpg}
+					\caption{\'Emulateur Androïd Genymotion}
+		\end{figure}
+	
+\end{itemize} 
 
 \chapter{Analyse des classes}
 
@@ -421,16 +387,151 @@ Dans ce chapitre, nous présentons les classes Hough.java, PictureHandler.java et
 		\begin{itemize}
 			\item lines: type HashMap<Integer, ArrayList<Point>>; Un tableau qui a comme clef des entiers permettant de retrouver plus facilement les listes de points de chaque ligne précédement stockée. 
 		\end{itemize}
+
+\section{HoughView.java}
+
+	\subsection{Constructeur}
+	
+	\textbf{public HoughView(Context context, AttributeSet attr, int defStyle)}
+	\vspace{1cm}
+	
+	\textbf{public HoughView(Context context, AttributeSet attr)}
+	\vspace{1cm}
+	
+	\textbf{public HoughView(Context context)}
+	\vspace{1cm}
+	
+	
+	
+	\subsection{Méthode}
+
+\textbf{private void initDrawing()}: récupération des IDs de chaque couleur des pions
+\vspace{1cm}
+
+\textbf{protected void onDraw(Canvas canvas)}: dessin des lignes de la tranformée de Hough, des intersections et des formes.
+\vspace{0.2cm}
+
+
+\chapter{Causes des dysfonctionnements possibles}
+
+Au fur et à mesure des analyses faites sur l'application, en croisant les résultats des images réelles avec celles créées sous Paint, nous en sommes arrivés à 4 causes possibles de dysfonctionnement:
+\vspace{0.2cm}
+
+\begin{enumerate}
+	\item Les photos prises par la tablette ont des couleurs mal prises en charge par l'algorithme de détection de couleur, les filtres fonctionneraient mal pour isoler les lignes noires.
+	\vspace{0.2cm}
+	
+	\item La transformée de Hough serait faussée et/ou pas assez précise. Nous avons fait des recherches sur des alternatives possibles décrites dans le chapitre suivant.
+	\vspace{0.2cm}
+	
+	\item La mauvaise gestion du format. Les images scrutées par l'algorithme sont de format différent (Bitmap, jpeg et png).
+	\vspace{0.2cm}
+	
+	\item Les photos prises avec la caméra sont trop inclinées. 
+	\vspace{0.2cm}
+\end{enumerate}
+
+\chapter{Recherches}
+
+	\section{Détection de formes}
+
+		\subsection{Tranformée de Hough}
+
+		Le principe qui sous-tend la transformée de Hough est qu'il existe un nombre infini de lignes qui passent par un point, dont la seule différence est l'orientation (l'angle). Le but de la transformée est de déterminer lesquelles de ces lignes passent au plus près du schéma attendu.
+		\vspace{0.2cm}
 		
+Dans la transformée de Hough, dite aussi transformée standard de Hough ou SHT, chaque ligne est un vecteur de coordonnées paramétriques :
+\vspace{0.2cm}
+
+\begin{itemize}
+	\item $\theta$ : l'angle
+	\item $\rho$ : la norme du vecteur (la longueur du segment perpendiculaire à la droite d'angle $\theta$ et passant par l'origine)
+\end{itemize}
+\vspace{0.2cm}
+
+En transformant toutes les lignes possibles qui passent par un point, c'est-à-dire en calculant la valeur de $\rho$ pour chaque $\theta$, on obtient une sinusoïde unique appelée espace de Hough. Si les courbes associées à deux points se coupent, l'endroit où elles se coupent dans l'espace de Hough correspond aux paramètres d'une droite qui relie ces deux points.
+\vspace{4cm}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.55]{images/hough.png}
+	\caption{Transformée de Hough}
+\end{figure}
+
+\newpage
+
+		\subsection{Codage de Freeman absolu}
+
+Codage avec un nombre limité de bits de la direction locale d'un élément de contour défini dans une image discrète, puis constitution d'une chaine de codes à partir d'un pixel initial, considérant qu'un élément de contour relie 2 pixels connexes.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=1]{images/freeman_absolu.png}
+	\caption{Constitution d'une chaîne de codes}
+\end{figure}
+
+		\subsection{Codage de Freeman relatif}
+
+Dans cette variante on code le changement de direction plutôt que de la direction.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=1]{images/freeman_relatif1.png}
+		\caption{Codage du changement de direction}
+\end{figure}
+
+Le code de Freeman standard est invariant en translation uniquement. Le code Freeman relatif est invariant en translation et aux rotations de 45°.
+\vspace{0.2cm}
+
+Codage sur 2 bits pour connexité 4. Codage sur 3 bits pour connexité 8. Codage sur 4 bits pour connexité 8 + longueur 2. Etc...
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.4]{images/freeman_relatif2.png}
+		\caption{Nombre de directions}
+\end{figure}
+
+\newpage
+
+\subsection{Régression linéaire}
+
+On approche un ensemble de points par un segment de droite. Pour cela on minimise un résidu entre le modèle (la droite) et les données (points repérés par leurs coordonnées).
+\vspace{0.2cm}
+
+\begin{itemize}
+	\item Résidu: 
+	\vspace{0.2cm}
+	
+	\begin{center}
+	$d^{2}(a,b) = $
+	\end{center}
+\end{itemize}
 
 
-	\section{HoughView.java}
+	\section{Détection de couleur}
 
 
 
-\chapter{Tests effectués}
 
+	
 
+\chapter{Travaux effectués}
+
+Relecture et compréhension du code
+
+Apprentissage des bases du Java
+
+Mise en place de l'IDE et des librairies
+
+Identification des entrées/sorties de la transformée
+
+Recherche d'algorithmes alternatifs
+
+Réécriture des filtres en niveau de gris
+
+Tests en mode débug avec Genymotion
+
+Réécriture d'une transformée de Hough en standalone
 
 \chapter{Démonstration}
 
