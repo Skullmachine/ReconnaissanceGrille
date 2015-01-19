@@ -1,0 +1,22 @@
+01-12 11:15:09.812: I/dalvikvm-heap(1631): Grow heap (frag case) to 60.880MB for 9999408-byte allocation
+01-12 11:15:09.948: D/dalvikvm(1631): GC_FOR_ALLOC freed 10K, 9% free 62276K/68324K, paused 17ms, total 18ms
+01-12 11:15:10.208: I/System.out(1631): Transformee de Hough
+01-12 11:17:39.792: I/System.out(1631): Results:
+01-12 11:21:10.556: I/System.out(1631): winner: theta=0.0, rho=-521
+01-12 11:21:10.556: I/System.out(1631): winner: theta=0.0, rho=-374
+01-12 11:21:10.556: I/System.out(1631): winner: theta=90.0, rho=-370
+01-12 11:21:10.556: I/System.out(1631): winner: theta=90.0, rho=-279
+01-12 11:21:10.556: I/System.out(1631): winner: theta=0.0, rho=-219
+01-12 11:21:10.556: I/System.out(1631): winner: theta=90.0, rho=-188
+01-12 11:21:10.556: I/System.out(1631): winner: theta=90.0, rho=-89
+01-12 11:21:10.556: I/System.out(1631): winner: theta=0.0, rho=-73
+01-12 11:21:10.556: I/System.out(1631): winner: theta=90.0, rho=-5
+01-12 11:21:10.556: I/System.out(1631): winner: theta=0.0, rho=67
+01-12 11:21:10.556: I/System.out(1631): winner: theta=0.0, rho=76
+01-12 11:21:10.560: I/System.out(1631): winner: theta=90.0, rho=94
+01-12 11:21:10.560: I/System.out(1631): winner: theta=90.0, rho=185
+01-12 11:21:10.560: I/System.out(1631): winner: theta=0.0, rho=223
+01-12 11:21:10.560: I/System.out(1631): winner: theta=90.0, rho=269
+01-12 11:21:10.560: I/System.out(1631): winner: theta=0.0, rho=363
+01-12 11:21:10.560: I/System.out(1631): winner: theta=90.0, rho=367
+01-12 11:21:10.560: I/System.out(1631): winner: theta=0.0, rho=51

@@ -14,17 +14,20 @@
 \contentsline {section}{\numberline {2.2}PictureHandler.java}{10}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Constructeur}{10}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}M\'ethodes}{10}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}HoughView.java}{11}{section.2.3}
 \contentsline {chapter}{\numberline {3}Causes des dysfonctionnements possibles}{12}{chapter.3}
 \contentsline {chapter}{\numberline {4}Recherches}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}D\'etection de formes}{13}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Tranform\'ee de Hough}{13}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Codage de Freeman absolu}{14}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Codage de Freeman relatif}{14}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}R\'egression lin\'eaire}{15}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}D\'etection de couleur}{15}{section.4.2}
-\contentsline {chapter}{\numberline {5}Travaux effectu\'es}{16}{chapter.5}
-\contentsline {chapter}{\numberline {6}D\'emonstration}{17}{chapter.6}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Conclusion}{18}{chapter*.4}
-\contentsline {paragraph}{R\'esum\'e:}{20}{section*.6}
-\contentsline {paragraph}{Mots clefs:}{20}{section*.7}
+\contentsline {subsection}{\numberline {4.1.4}R\'egression lin\'eaire}{14}{subsection.4.1.4}
+\contentsline {chapter}{\numberline {5}Travaux effectu\'es}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Apprentissage des bases du Java}{15}{section.5.1}
+\contentsline {section}{\numberline {5.2}Analyse de l'application existante}{15}{section.5.2}
+\contentsline {section}{\numberline {5.3}R\'e\'ecriture des filtres en niveau de gris}{15}{section.5.3}
+\contentsline {section}{\numberline {5.4}Tests en mode debug avec Genymotion}{16}{section.5.4}
+\contentsline {section}{\numberline {5.5}R\'e\'ecriture d'une transform\'ee de Hough en standalone}{17}{section.5.5}
+\contentsline {chapter}{\numberline {6}D\'emonstration}{18}{chapter.6}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Conclusion}{20}{chapter*.4}
+\contentsline {paragraph}{R\'esum\'e:}{24}{section*.6}
+\contentsline {paragraph}{Mots clefs:}{24}{section*.7}

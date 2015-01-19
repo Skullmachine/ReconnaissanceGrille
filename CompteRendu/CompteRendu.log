@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.20)  15 JAN 2015 11:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.20)  18 JAN 2015 22:51
 entering extended mode
 **CompteRendu.tex
 (C:\Users\tiger\Documents\GitHub\ReconnaissanceGrille\CompteRendu\CompteRendu.tex
@@ -549,31 +549,37 @@ Writing index file CompteRendu.idx
 
 ]
 Chapitre 1.
-<images/gantt.png, id=200, 1096.095pt x 277.035pt>
+<images/gantt.png, id=223, 1096.095pt x 277.035pt>
 File: images/gantt.png Graphic file (type png)
  <use images/gantt.png>
 Package pdftex.def Info: images/gantt.png used on input line 58.
 (pdftex.def)             Requested size: 438.43024pt x 110.81203pt.
  [6
 
- <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/images/gantt.png (PNG copy)>] <images/adt.png, id=209
+ <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/images/gantt.png (PNG copy)>] <images/adt.png, id=232
 , 301.125pt x 180.675pt>
 File: images/adt.png Graphic file (type png)
 
 <use images/adt.png>
 Package pdftex.def Info: images/adt.png used on input line 81.
 (pdftex.def)             Requested size: 120.44786pt x 72.2687pt.
- <images/lejos.jpg, id=211, 260.975pt x 72.27pt>
+ <images/lejos.jpg, id=234, 260.975pt x 72.27pt>
 File: images/lejos.jpg Graphic file (type jpg)
  <use images/lejos.jpg>
 Package pdftex.def Info: images/lejos.jpg used on input line 89.
 (pdftex.def)             Requested size: 104.38815pt x 28.90747pt.
 
-<images/genymotion.jpg, id=212, 607.26875pt x 341.275pt>
+<images/genymotion.jpg, id=235, 607.26875pt x 341.275pt>
 File: images/genymotion.jpg Graphic file (type jpg)
  <use images/genymotion.jpg>
 Package pdftex.def Info: images/genymotion.jpg used on input line 97.
 (pdftex.def)             Requested size: 121.4516pt x 68.25378pt.
+
+<images/github.png, id=236, 582.175pt x 230.8625pt>
+File: images/github.png Graphic file (type png)
+ <use images/github.png>
+Package pdftex.def Info: images/github.png used on input line 105.
+(pdftex.def)             Requested size: 116.43294pt x 46.17168pt.
 
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
  []$[]$$[]$|
@@ -581,7 +587,7 @@ Overfull \hbox (2.84544pt too wide) has occurred while \output is active
 
 [7 <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/images/adt.png> <C:/Users/tiger/Documents/GitHub/Re
 connaissanceGrille/CompteRendu/images/lejos.jpg> <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/image
-s/genymotion.jpg>]
+s/genymotion.jpg> <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/images/github.png>]
 Chapitre 2.
 [8
 
@@ -601,114 +607,166 @@ Chapitre 3.
 
 ]
 Chapitre 4.
-<images/hough.png, id=244, 428.35031pt x 269.50688pt>
+<images/hough.png, id=269, 428.35031pt x 269.50688pt>
 File: images/hough.png Graphic file (type png)
  <use images/hough.png>
-Package pdftex.def Info: images/hough.png used on input line 435.
+Package pdftex.def Info: images/hough.png used on input line 441.
 (pdftex.def)             Requested size: 235.5934pt x 148.22923pt.
  [13
 
- <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/images/hough.png>] <images/freeman_absolu.png, id=251
+ <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/images/hough.png>] <images/freeman_absolu.png, id=276
 , 140.77594pt x 140.02313pt>
 File: images/freeman_absolu.png Graphic file (type png)
 
 <use images/freeman_absolu.png>
-Package pdftex.def Info: images/freeman_absolu.png used on input line 447.
-(pdftex.def)             Requested size: 140.77557pt x 140.02278pt.
- <images/freeman_relatif1.png, id=252, 505.13719pt x 63.23625pt>
+Package pdftex.def Info: images/freeman_absolu.png used on input line 453.
+(pdftex.def)             Requested size: 70.38779pt x 70.01138pt.
+ <images/freeman_relatif1.png, id=277, 505.13719pt x 63.23625pt>
 File: images/freeman_relatif1.png Graphic file (type png)
 
 <use images/freeman_relatif1.png>
-Package pdftex.def Info: images/freeman_relatif1.png used on input line 457.
+Package pdftex.def Info: images/freeman_relatif1.png used on input line 463.
 (pdftex.def)             Requested size: 505.13596pt x 63.23608pt.
 
-Overfull \hbox (21.4391pt too wide) in paragraph at lines 457--458
+Overfull \hbox (21.4391pt too wide) in paragraph at lines 463--464
  [][] 
  []
 
 
 Package frenchb.ldf Warning: Degrees would look better in TS1-encoding: 
 (frenchb.ldf)                add \usepackage{textcomp} to the preamble. 
-(frenchb.ldf)                Degrees used on input line 461.
+(frenchb.ldf)                Degrees used on input line 467.
 
-<images/freeman_relatif2.png, id=253, 465.23813pt x 390.70969pt>
+<images/freeman_relatif2.png, id=278, 465.23813pt x 390.70969pt>
 File: images/freeman_relatif2.png Graphic file (type png)
  <use images/freeman_relatif2.png>
-Package pdftex.def Info: images/freeman_relatif2.png used on input line 468.
+Package pdftex.def Info: images/freeman_relatif2.png used on input line 474.
 (pdftex.def)             Requested size: 186.09195pt x 156.2811pt.
  [14 <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/images/freeman_absolu.png> <C:/Users/tiger/Docume
 nts/GitHub/ReconnaissanceGrille/CompteRendu/images/freeman_relatif1.png> <C:/Users/tiger/Documents/GitHub/Reconnaissance
 Grille/CompteRendu/images/freeman_relatif2.png>]
+Chapitre 5.
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 499.
+
+(C:\Users\tiger\Documents\GitHub\ReconnaissanceGrille\CompteRendu\code/niveau_gris.java
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 13.
+LaTeX Font Info:    No file OMScmss.fd. on input line 13.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textasteriskcentered' on input line 13.
+
+)
+Underfull \vbox (badness 1107) has occurred while \output is active []
+
+ [15
+
+]
+(C:\Users\tiger\Documents\GitHub\ReconnaissanceGrille\CompteRendu\code/paint.txt) [16]
+(C:\Users\tiger\Documents\GitHub\ReconnaissanceGrille\CompteRendu\code/reelle.txt)
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
  []$[]$$[]$|
  []
 
-[15]
-Chapitre 5.
-[16
-
-]
+[17]
 Chapitre 6.
-[17
+<images/real_photo1.jpg, id=360, 1084.05pt x 647.41875pt>
+File: images/real_photo1.jpg Graphic file (type jpg)
+ <use images/real_photo1.jpg>
+Package pdftex.def Info: images/real_photo1.jpg used on input line 546.
+(pdftex.def)             Requested size: 433.61232pt x 258.9629pt.
+ [18
 
-] 
+ <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/images/real_photo1.jpg>] <images/real_photo2.jpg, id=
+365, 1084.05pt x 647.41875pt>
+File: images/real_photo2.jpg Graphic file (type jpg)
+
+<use images/real_photo2.jpg>
+Package pdftex.def Info: images/real_photo2.jpg used on input line 554.
+(pdftex.def)             Requested size: 433.61232pt x 258.9629pt.
+ <images/real_photo3.jpg, id=366, 1084.05pt x 647.41875pt>
+File: images/real_photo3.jpg Graphic file (type jpg)
+ <use images/real_photo3.jpg>
+Package pdftex.def Info: images/real_photo3.jpg used on input line 560.
+(pdftex.def)             Requested size: 433.61232pt x 258.9629pt.
+
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+ []$[]$$[]$|
+ []
+
+[19 <C:/Users/tiger/Documents/GitHub/ReconnaissanceGrille/CompteRendu/images/real_photo2.jpg> <C:/Users/tiger/Documents/
+GitHub/ReconnaissanceGrille/CompteRendu/images/real_photo3.jpg>] 
 AED: lastpage setting LastPage
-[18
+[20
 
 ]
 No file CompteRendu.ind.
-runsystem(printf "Nombre de pages : 19")...disabled (restricted).
+runsystem(printf "Nombre de pages : 21")...disabled (restricted).
 
 ( FP-DIV )
-runsystem(printf "Division : 4.750000000000000000")...disabled (restricted).
+runsystem(printf "Division : 5.250000000000000000")...disabled (restricted).
 
  ( FP-TRUNC )
-runsystem(printf "Nombre de paquets de 4 pages : 4")...disabled (restricted).
+runsystem(printf "Nombre de paquets de 4 pages : 5")...disabled (restricted).
 
  ( FP-MUL )
-runsystem(printf "Nombre de pages en paquet : 16.000000000000000000")...disabled (restricted).
+runsystem(printf "Nombre de pages en paquet : 20.000000000000000000")...disabled (restricted).
 
  ( FP-SUB ) ( FP-TRUNC )
-runsystem(printf "Nombre de pages hors paquet : 3")...disabled (restricted).
+runsystem(printf "Nombre de pages hors paquet : 1")...disabled (restricted).
 
  ( FP-ZERO? )
 runsystem(printf "On rajoutera des pages")...disabled (restricted).
 
  ( FP-SUB ) ( FP-TRUNC )
-runsystem(printf "Nombre de pages a ajouter : 1")...disabled (restricted).
+runsystem(printf "Nombre de pages a ajouter : 3")...disabled (restricted).
 
  ( FP-SUB ) ( FP-POS? )
+runsystem(printf "Ajout d'une page 2.000000000000000000")...disabled (restricted).
+
+
+( FP-SUB ) ( FP-POS? )
+runsystem(printf "Ajout d'une page 1.000000000000000000")...disabled (restricted).
+
+ [21
+
+] ( FP-SUB ) ( FP-POS? )
 runsystem(printf "Ajout d'une page 0.000000000000000000")...disabled (restricted).
 
-
-( FP-SUB ) ( FP-POS? ) [19
-
-]
-Underfull \hbox (badness 3118) in paragraph at lines 527--527
+ [22] ( FP-SUB ) ( FP-POS? ) [23]
+Underfull \hbox (badness 3118) in paragraph at lines 575--575
 [][]\T1/cmss/m/n/10.95 alexandre.billay@etu.univ-tours.fr, thes-kull-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 527.
-[20
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 575.
+[24
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 527.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 575.
  (C:\Users\tiger\Documents\GitHub\ReconnaissanceGrille\CompteRendu\CompteRendu.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 527.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 527.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 575.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 575.
 Package rerunfilecheck Info: File `CompteRendu.out' has not changed.
-(rerunfilecheck)             Checksum: 1C9051C02A7890107EB33B07B7CC4FB9;1878.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 527.
+(rerunfilecheck)             Checksum: 31975317127910ED348C9B87824D1352;2200.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 575.
  )
-(\end occurred when \iffalse on line 527 was incomplete) 
+(\end occurred when \iffalse on line 575 was incomplete) 
 Here is how much of TeX's memory you used:
- 10637 strings out of 493921
- 149169 string characters out of 3147282
- 361330 words of memory out of 3000000
- 13650 multiletter control sequences out of 15000+200000
+ 11168 strings out of 493921
+ 155136 string characters out of 3147282
+ 543176 words of memory out of 3000000
+ 14084 multiletter control sequences out of 15000+200000
  22424 words of font info for 51 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,14n,45p,685b,417s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,45p,803b,1350s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
 en\ec\dpi600\ecss0800.pk> <C:\Users\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1200.pk> <C:\U
 sers\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\tiger\AppData\Local\MiKTeX
@@ -721,11 +779,10 @@ er\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx2488.pk> <C:\
 ts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk> <C:\Users\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 \ecsx1728.pk> <C:\Users\tiger\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk> <C:\Users\tiger\A
 ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1095.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on CompteRendu.pdf (20 pages, 543663 bytes).
+msfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on CompteRendu.pdf (24 pages, 1473548 bytes).
 PDF statistics:
- 836 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 997 PDF objects out of 1000 (max. 8388607)
+ 139 named destinations out of 1000 (max. 500000)
+ 306 words of extra memory for PDF output out of 10000 (max. 10000000)
 

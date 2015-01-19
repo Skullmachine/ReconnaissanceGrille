@@ -1,0 +1,23 @@
+01-12 11:23:24.292: I/dalvikvm-heap(1631): Grow heap (frag case) to 87.900MB for 28311564-byte allocation
+01-12 11:23:24.312: D/dalvikvm(1631): GC_FOR_ALLOC freed <1K, 19\% free 89954K/110380K, paused 20ms, total 20ms
+01-12 11:23:24.668: I/System.out(1631): Transformee de Hough
+01-12 11:24:59.696: I/System.out(1631): Results:
+01-12 11:25:04.976: I/System.out(1631): winner: theta=173.5, rho=-362
+01-12 11:25:04.976: I/System.out(1631): winner: theta=86.5, rho=-355
+01-12 11:25:04.976: I/System.out(1631): winner: theta=87.0, rho=-308
+01-12 11:25:04.976: I/System.out(1631): winner: theta=24.5, rho=-284
+01-12 11:25:04.976: I/System.out(1631): winner: theta=87.50000000000001, rho=-266
+01-12 11:25:04.976: I/System.out(1631): winner: theta=88.49999999999999, rho=-214
+01-12 11:25:04.976: I/System.out(1631): winner: theta=20.5, rho=-207
+01-12 11:25:04.980: I/System.out(1631): winner: theta=89.0, rho=-156
+01-12 11:25:04.980: I/System.out(1631): winner: theta=89.5, rho=-89
+01-12 11:25:04.980: I/System.out(1631): winner: theta=90.5, rho=-15
+01-12 11:25:04.980: I/System.out(1631): winner: theta=90.5, rho=-6
+01-12 11:25:04.980: I/System.out(1631): winner: theta=91.5, rho=71
+01-12 11:25:04.980: I/System.out(1631): winner: theta=91.5, rho=81
+01-12 11:25:04.980: I/System.out(1631): winner: theta=92.5, rho=171
+01-12 11:25:04.984: I/System.out(1631): winner: theta=93.00000000000001, rho=183
+01-12 11:25:09.480: D/AndroidRuntime(1631): Shutting down VM
+01-12 11:25:09.480: W/dalvikvm(1631): threadid=1: thread exiting with uncaught exception (group=0xa4c36648)
+01-12 11:25:09.500: E/AndroidRuntime(1631): FATAL EXCEPTION: main
+01-12 11:25:09.500: E/AndroidRuntime(1631): java.lang.IndexOutOfBoundsException: Invalid index 1, size is 1

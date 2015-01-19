@@ -70,7 +70,7 @@ Le reste du projet, a été fait ensemble, c'est à dire la prise en main du Java a
 
 	\section{Software utilisés}
 
-Lors de ce projet nous avons pu mettre en pratique différents software:
+Lors de ce projet nous avons pu mettre en pratique différents software ci-dessous. Il faut savoir que l'installation des 3 premiers fut un challenge car nous n'avions pas les versions de logiciels utilisés par notre prédécesseur. Merci à Clément Laloubeyre qui nous a aidé à la mise en marche de ceux-ci sur nos 2 ordinateurs personnels.
 \vspace{0.2cm}
 
 \begin{itemize}
@@ -96,7 +96,15 @@ Lors de ce projet nous avons pu mettre en pratique différents software:
 				\centering
 					\includegraphics[scale=0.2]{images/genymotion.jpg}
 					\caption{\'Emulateur Androïd Genymotion}
-		\end{figure}
+	\end{figure}
+	
+	\item \textbf{GitHub:} logiciel de gestion de version décentralisé. Sachant que nous passerions des périodes en entreprise, au large, durant notre projet, nous avons opté pour utiliser GitHub permettant de nous coordinner sur le travail effectué.
+	
+		\begin{figure}[h!]
+				\centering
+					\includegraphics[scale=0.2]{images/github.png}
+					\caption{Logo Github}
+	\end{figure}
 	
 \end{itemize} 
 
@@ -304,7 +312,7 @@ Dans ce chapitre, nous présentons les classes Hough.java, PictureHandler.java et
 			\vspace{0.2cm}
 
 			\begin{itemize}
-				\item acc: tableau 2 dimensions d'entier; on récupère ???
+				\item acc: tableau 2 dimensions d'entier; on récupère les \textit{winner}
 				\vspace{1cm}
 			\end{itemize}
 
@@ -388,30 +396,6 @@ Dans ce chapitre, nous présentons les classes Hough.java, PictureHandler.java et
 			\item lines: type HashMap<Integer, ArrayList<Point>>; Un tableau qui a comme clef des entiers permettant de retrouver plus facilement les listes de points de chaque ligne précédement stockée. 
 		\end{itemize}
 
-\section{HoughView.java}
-
-	\subsection{Constructeur}
-	
-	\textbf{public HoughView(Context context, AttributeSet attr, int defStyle)}
-	\vspace{1cm}
-	
-	\textbf{public HoughView(Context context, AttributeSet attr)}
-	\vspace{1cm}
-	
-	\textbf{public HoughView(Context context)}
-	\vspace{1cm}
-	
-	
-	
-	\subsection{Méthode}
-
-\textbf{private void initDrawing()}: récupération des IDs de chaque couleur des pions
-\vspace{1cm}
-
-\textbf{protected void onDraw(Canvas canvas)}: dessin des lignes de la tranformée de Hough, des intersections et des formes.
-\vspace{0.2cm}
-
-
 \chapter{Causes des dysfonctionnements possibles}
 
 Au fur et à mesure des analyses faites sur l'application, en croisant les résultats des images réelles avec celles créées sous Paint, nous en sommes arrivés à 4 causes possibles de dysfonctionnement:
@@ -466,7 +450,7 @@ Codage avec un nombre limité de bits de la direction locale d'un élément de cont
 
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=1]{images/freeman_absolu.png}
+		\includegraphics[scale=0.5]{images/freeman_absolu.png}
 	\caption{Constitution d'une chaîne de codes}
 \end{figure}
 
@@ -491,59 +475,101 @@ Codage sur 2 bits pour connexité 4. Codage sur 3 bits pour connexité 8. Codage s
 		\caption{Nombre de directions}
 \end{figure}
 
-\newpage
 
 \subsection{Régression linéaire}
 
 On approche un ensemble de points par un segment de droite. Pour cela on minimise un résidu entre le modèle (la droite) et les données (points repérés par leurs coordonnées).
 \vspace{0.2cm}
 
-\begin{itemize}
-	\item Résidu: 
-	\vspace{0.2cm}
-	
-	\begin{center}
-	$d^{2}(a,b) = $
-	\end{center}
-\end{itemize}
-
-
-	\section{Détection de couleur}
-
-
-
-
-	
 
 \chapter{Travaux effectués}
 
-Relecture et compréhension du code
+\section{Apprentissage des bases du Java}
 
-Apprentissage des bases du Java
+Lors de la réunion d'attribution des projets de développement embarqué, nous avons été choisi au hasard pour le réalisé. De ce fait, nous avons été pris au dépourvu sur le Java surtout que les cours permettant son apprentissage n'arrive qu'une semaine avant la dernière semaine du projet. Nous avons donc pu pallier ce problème en suivant des tutoriels en ligne tels que ceux d'\textit{Open Classroom} ou ceux de \textit{Developpez.com}. 
 
-Mise en place de l'IDE et des librairies
+\section{Analyse de l'application existante}
 
-Identification des entrées/sorties de la transformée
+L'application Androïd du pont roulant n'était malheureusement pas très bien documentée. En plus de la difficulté de l'apprentissage d'un nouveau langage, nous n'avons pas pu nous rattaché à un diagramme UML ou même à un descriptif des méthodes utilisés. Nous avons dû se rattacher aux seuls commentaires parsemés. Le langage objet a été un rempart de plus, nous avons dû inspecter par quoi était appelé les différents objets. Nous avons donc pour des soucis d'évolutivité, définit les points d'entrées et sorties des classes sur lesquelles nous avons travaillé.
 
-Recherche d'algorithmes alternatifs
+\section{Réécriture des filtres en niveau de gris}
 
-Réécriture des filtres en niveau de gris
+On s'est attaché à vérifier si le bug de l'application existante, lors de la sélection d'une photo prise à l'aide de la caméra de la tablette, venait de certains seuils de couleur qui seraient dépassés. C'est pourquoi, on a créé une procédure de conversion en niveau de gris permettant d'obtenir le quadrillge. Cet essai n'a pas été probant puisque le bug persistait.
 
-Tests en mode débug avec Genymotion
+\lstinputlisting[language=Java, breaklines=true, commentstyle=\color{mygreen}, numbers=left, frame=single]{code/niveau_gris.java}	
 
-Réécriture d'une transformée de Hough en standalone
+\section{Tests en mode debug avec Genymotion}
+
+Nous voulions un outil permettant l'émulation d'Androïd pour passer en mode debug l'application. Nous avons utilisé l'émulateur de base présent dans ADT avant de se convertir à Genymotion, un outil bien plus ergonomique.
+
+L'un des problèmes rencontrés, était le temps d'exécution du programme. Sachant qu'il y a du traitement d'image, l'algorithme mouline relativement beaucoup. De plus, on sait que le mode debug ralentit les traitements. La recherche d'erreur fut plutôt longue. On a réussi cependant, a capturer des résultats probant. On a pu comparer entre la photo de \textit{Paint} et la photo prise avec la tablette, le nombre de ligne que l'algorithme faisait remonter à l'aide de la méthode \textbf{getWinner}. 
+\vspace{0.2cm}
+
+\begin{itemize}
+	\item La photo \textit{Paint}:
+	\vspace{0.2cm}
+	
+	\lstinputlisting[breaklines=true, commentstyle=\color{mygreen}, numbers=left, frame=single]{code/paint.txt}
+	\vspace{0.2cm}
+	
+	Il y a 18 lignes de détectés avec des $\theta$ et $\rho$ envisageable suivant notre cas.
+	
+	\newpage
+	
+	\item La photo de la tablette:
+	\vspace{0.2cm}
+	
+	\lstinputlisting[breaklines=true, commentstyle=\color{mygreen}, numbers=left, frame=single]{code/reelle.txt}
+	\vspace{0.2cm}
+	
+	Il n'y a que 15 lignes de détectés avant que cela ne lève une exception, alors que la grille en comporte 18. De plus, il y a des valeurs de rho qui ne collent avec nos estimations. Exemples: 173.5 et 24.5 degrés.
+	
+	Nous avons donc décidé de nous affranchir de ce code existant pour valider fonctionnellement notre module en standalone. Arès cette étape vérifiée, on pourrait l'implémenter dans l'application existante.
+\end{itemize}
+
+\section{Réécriture d'une transformée de Hough en standalone}
+
+La réécriture de la transformée de Hough en dehors de l'application était primordiale car nous devions valider son fonctionnement. Un programme a été créé par Xavier Philippeau et dont on s'est inspiré pour répondre à notre besoin. Après quelques réglages, une interface et l'algorithme de la transformée de l'application standalone furent mises au point.
 
 \chapter{Démonstration}
 
+Une vidéo faites par nos soin a été uploadé sur \textit{YouTube} à cette adresse: \url{http://youtu.be/tXzoQx-SrhM}
+
+La vidéo présente malheureusement une version obsolète de l'application. La dernière version n'affiche qu'une ligne verte au lieu d'une double ligne.
+\vspace{1cm}
+
+Exemples d'application de la transformée de Hough de notre application sur différentes prises de vue de la grille où se situe le pont roulant:
+\vspace{1cm}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.4]{images/real_photo1.jpg}
+		\caption{Photo 1}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.4]{images/real_photo2.jpg}
+		\caption{Photo 2}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.4]{images/real_photo3.jpg}
+		\caption{Photo 3}
+\end{figure}
+
+L'application est simple d'utilisation, il suffit d'ouvrir une image d'un format quelconque et ensuite de lancer la détection des lignes de celle-ci. Sur les 3 photos montrées ci-dessus, on peut s'apercevoir qu'il y a la détection d'une ligne à la verticale gauche en trop. Le rebord est détecté comme ligne noire.
 
 \conclusion
-
+Lors de ce projet, nous avons pu mettre en oeuvre des compétences en conduite de projet et en Java. Le besoin initial a été rempli, c'est à dire, avoir une solution intégrable de la transformée de Hough fonctionnelle à l'application Androïd existante. Clément Laloubeyre, l'étudiant faisant son PFE sur ce sujet, se chargera de l'intégré suivant nos points d'entrée et nos points de sortie. Nous n'avons malheureusement pas eu le temps de rédiger la documentation nécessaire pour une compréhension au premier coup d'oeuil mais l'on peut se féléiciter d'avoir un code commenté correctement. Sachant que notre apprentissage des diagrammes UML n'intervient qu'après le combat pour ce projet, nous n'avons pas pu prendre le temps nécessaire à sa compréhension et à sa réalisation.
+En conclusion, ce projet fut très intéressant même si au départ nous n'étions pas déterminé à le choisir. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \annexe
-	
-
 
 		
 \end{document}
